@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4AEBD66C-6C56-4B6F-B14A-DC5EF04B1742}</ProjectGuid>
+    <RootNamespace>PlaneGame</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Air.h" />
+    <ClInclude Include="BackGround.h" />
+    <ClInclude Include="EnemyBullets.h" />
+    <ClInclude Include="Boss.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="EnemyPlane.h" />
+    <ClInclude Include="Explode.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="Help.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MyPlane.h" />
+    <ClInclude Include="Oil.h" />
+    <ClInclude Include="People.h" />
+    <ClInclude Include="PlaneGame.h" />
+    <ClInclude Include="PlaneGameDoc.h" />
+    <ClInclude Include="PlaneGameView.h" />
+    <ClInclude Include="Protected.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SETLEVEL.h" />
+    <ClInclude Include="Skill.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Air.cpp" />
+    <ClCompile Include="BackGround.cpp" />
+    <ClCompile Include="EnemyBullets.cpp" />
+    <ClCompile Include="Boss.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="EnemyPlane.cpp" />
+    <ClCompile Include="Explode.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Help.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MyPlane.cpp" />
+    <ClCompile Include="Oil.cpp" />
+    <ClCompile Include="People.cpp" />
+    <ClCompile Include="PlaneGame.cpp" />
+    <ClCompile Include="PlaneGameDoc.cpp" />
+    <ClCompile Include="PlaneGameView.cpp" />
+    <ClCompile Include="Protected.cpp" />
+    <ClCompile Include="SETLEVEL.cpp" />
+    <ClCompile Include="Skill.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PlaneGame.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\PlaneGame.rc2" />
+    <None Include="res\wave3.bin" />
+    <None Include="res\wave5.bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\bomb.bmp" />
+    <Image Include="..\..\bomb.png" />
+    <Image Include="..\..\initpintu_副本.bmp" />
+    <Image Include="..\..\JitPlane.bmp" />
+    <Image Include="..\..\shield.bmp" />
+    <Image Include="..\..\wsparticle_15.bmp" />
+    <Image Include="..\..\wsparticle_19.bmp" />
+    <Image Include="..\images\1-1.bmp" />
+    <Image Include="..\images\back.bmp" />
+    <Image Include="..\images\BackI.bmp" />
+    <Image Include="..\images\ball.BMP" />
+    <Image Include="..\images\Begin.bmp" />
+    <Image Include="..\images\bitmap1.bmp" />
+    <Image Include="..\images\bitmap3.bmp" />
+    <Image Include="..\images\bitmap4.bmp" />
+    <Image Include="..\images\bitmap5.bmp" />
+    <Image Include="..\images\BluePlane.bmp" />
+    <Image Include="..\images\bomb.bmp" />
+    <Image Include="..\images\bomb1.bmp" />
+    <Image Include="..\images\bombUp.bmp" />
+    <Image Include="..\images\enemy.bmp" />
+    <Image Include="..\images\enemy1.bmp" />
+    <Image Include="..\images\Explore.bmp" />
+    <Image Include="..\images\explosion.BMP" />
+    <Image Include="..\images\image\background.bmp" />
+    <Image Include="..\images\image\bomb.bmp" />
+    <Image Include="..\images\image\end.bmp" />
+    <Image Include="..\images\image\enemy12.bmp" />
+    <Image Include="..\images\image\enemy2.bmp" />
+    <Image Include="..\images\image\me.bmp" />
+    <Image Include="..\images\jineng.bmp" />
+    <Image Include="..\images\me.bmp" />
+    <Image Include="..\images\MyPlane.bmp" />
+    <Image Include="..\images\p-f03.bmp" />
+    <Image Include="..\images\plane.bmp" />
+    <Image Include="..\images\sda.bmp" />
+    <Image Include="..\images\SH94D.bmp" />
+    <Image Include="..\images\skill.bmp" />
+    <Image Include="..\images\Z13L6H]OT35UR)O$)LSH94D.bmp" />
+    <Image Include="..\images\zidan.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\1-1.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\jiguang4.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\zidan1.bmp" />
+    <Image Include="images\BackGround.bmp" />
+    <Image Include="images\Begin.bmp" />
+    <Image Include="images\bg3_0.bmp" />
+    <Image Include="images\bitmap1.bmp" />
+    <Image Include="images\bitmap10.bmp" />
+    <Image Include="images\bitmap5.bmp" />
+    <Image Include="images\bitmap8.bmp" />
+    <Image Include="images\bomb.bmp" />
+    <Image Include="images\Clear.bmp" />
+    <Image Include="images\dsds.bmp" />
+    <Image Include="images\fanghu.bmp" />
+    <Image Include="images\image\ball.BMP" />
+    <Image Include="images\image\bomb1.bmp" />
+    <Image Include="images\image\end.bmp" />
+    <Image Include="images\image\enemy1.bmp" />
+    <Image Include="images\image\enemy12.bmp" />
+    <Image Include="images\image\enemy2.bmp" />
+    <Image Include="images\image\explosion.BMP" />
+    <Image Include="images\image\me.bmp" />
+    <Image Include="images\Jew3.bmp" />
+    <Image Include="images\Jewel.bmp" />
+    <Image Include="images\jiguang4.bmp" />
+    <Image Include="images\jineng.bmp" />
+    <Image Include="images\oil.bmp" />
+    <Image Include="images\p-f02.bmp" />
+    <Image Include="images\p-f03.bmp" />
+    <Image Include="images\plane.bmp" />
+    <Image Include="images\sda.bmp" />
+    <Image Include="images\SH94D.bmp" />
+    <Image Include="images\u=1808290680,1474972048&amp;fm=21&amp;gp=0.bmp" />
+    <Image Include="images\ufo.bmp" />
+    <Image Include="images\wsparticle_19.bmp" />
+    <Image Include="images\wsparticle_tailinga_0.bmp" />
+    <Image Include="images\zidan1-1.bmp" />
+    <Image Include="images\zidan1.bmp" />
+    <Image Include="res\bitmap2.bmp" />
+    <Image Include="res\PlaneGame.ico" />
+    <Image Include="res\PlaneGameDoc.ico" />
+    <Image Include="res\Toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="images\WAVE1.wav" />
+    <Media Include="res\game_music.mp3" />
+    <Media Include="res\game_music.wav" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="PlaneGame.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
